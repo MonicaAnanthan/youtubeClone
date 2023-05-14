@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/img/youtube.png">
+    <title>Youtube clone | Webcode 1</title>
+    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <!-- header -->
+    <nav class="navbar">
+        <div class="toggle-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <img src="./assets/img/logo.png" alt="logo" class="logo" />
+        <div class="search-box">
+            <input type="text" class="search-bar" placeholder="search" />
+            <button class="search-btn">
+                <img src="./assets/img/search.png" alt="search" class="icon" />
+            </button>
+            <img src="./assets/img/microphone.png" alt="microphone" class="icon" />
+        </div>
+        <div class="user-drop">
+            <img src="./assets/img/create.png" alt="icon" class="icon" />
+            <img src="./assets/img/bell.png" alt="icon" class="icon" />
+            <div class="user-dp">
+                <img src="./assets/img/account.png" alt="user" />
+            </div>
+        </div>
+    </nav>
+
+    <!-- sidebar -->
+    <div class="sidebar-menu">
+        <a href="#" class="links active"><img src="./assets/img/home.png" alt="icon">home</a>
+        <a href="#" class="links"><img src="./assets/img/shorts.png" alt="icon" class="short">shorts</a>
+        <a href="#" class="links subscriptionList"><img src="./assets/img/subscribe.png" alt="icon">subscription</a>
+        <hr class="seperator">
+        <a href="#" class="links"><img src="./assets/img/library.png" alt="icon">library</a>
+        <a href="#" class="links"><img src="./assets/img/history.png" alt="icon">history</a>
+        <a href="#" class="links"><img src="./assets/img/yourVideo.png" alt="icon">your videos</a>
+        <a href="#" class="links"><img src="./assets/img/clock.png" alt="icon">watch leater</a>
+        <a href="#" class="links"><img src="./assets/img/like.png" alt="icon">liked videos</a>
+        <a href="#" class="links playListName"></a>
+    </div>
+
+    <!-- top menu -->
+    <div class="top-menu">
+        <button class="menu-option active">all</button>
+        <button class="menu-option">music</button>
+        <button class="menu-option">CSS</button>
+        <button class="menu-option">live</button>
+        <button class="menu-option">web development</button>
+        <button class="menu-option">entertainment</button>
+        <button class="menu-option">marvel</button>
+        <button class="menu-option">javascript</button>
+        <button class="menu-option">machine learning</button>
+        <button class="menu-option">cooking</button>
+        <button class="menu-option">gardening</button>
+        <button class="menu-option">comedy</button>
+        <button class="menu-option">trailer</button>
+        <button class="menu-option">contemporary worship music</button>
+        <button class="menu-option">tamil cinema</button>
+        <button class="menu-option">new to you</button>
+    </div>
+
+    <!-- videos -->
+    <div class="video-wrapper"></div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Create new playlist</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label class="form-label">Name</label>
+                        <input placeholder="Enter playlist name..." class="form-control" id="playName" value="" />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Privacy</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Private</option>
+                            <option value="1">Public</option>
+                            <option value="2">Unlisted</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button onclick="playListFunction()" type="button" class="btn btn-primary">Create</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/bootstrap/bootstrap.min.js"></script>
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
